@@ -3,6 +3,8 @@ https://youtu.be/portflow-ai-demo-l1-team-y
 PortFlow AI — Autonomous Maritime Terminal Operations Intelligence Platform
 Team: L1 TEAM Y (Track: AI)
 
+Local repository recording: demo/demo-walkthrough.webp (9.3 MB interactive video recording)
+
 Video walkthrough sections:
 1. Command Center & Real-Time Congestion Risk Gauge
 2. High-Performance Canvas Port Map Digital Twin & Vessel AIS Telemetry
@@ -10,4 +12,5 @@ Video walkthrough sections:
 4. Google OR-Tools Dynamic Berth Scheduling & Crane Allocation
 5. What-If Disruption Simulator (Crane Breakdown & Storm Response)
 6. IBM Bob RAG Conversational Operations Copilot
+
 
