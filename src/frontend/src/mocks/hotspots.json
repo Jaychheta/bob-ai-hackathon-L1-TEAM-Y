@@ -1,0 +1,49 @@
+[
+  {
+    "zone": "Berth-04",
+    "type": "berth",
+    "risk": 0.91,
+    "expected_extra_queue": 7,
+    "eta_hours": 6,
+    "status": "CRITICAL",
+    "utilization": 0.96,
+    "details": "Length saturation: 2 Post-Panamax vessels queuing. Draft demand exceeds safe margin."
+  },
+  {
+    "zone": "Yard-B",
+    "type": "yard",
+    "risk": 0.78,
+    "utilization": 0.94,
+    "status": "HIGH",
+    "expected_extra_queue": 320,
+    "details": "TEU stacking density near critical threshold. Container dwell time spiked to 5.2 days."
+  },
+  {
+    "zone": "Crane-Group-2",
+    "type": "crane",
+    "risk": 0.64,
+    "utilization": 0.89,
+    "status": "HIGH",
+    "expected_extra_queue": 3,
+    "details": "QC-03 running at 94% capacity. Mechanical heat warning logged."
+  },
+  {
+    "zone": "Berth-02",
+    "type": "berth",
+    "risk": 0.45,
+    "expected_extra_queue": 1,
+    "eta_hours": 12,
+    "status": "MEDIUM",
+    "utilization": 0.68,
+    "details": "Moderate utilization. Capacity available for feeder re-routing."
+  },
+  {
+    "zone": "Gate-West",
+    "type": "gate",
+    "risk": 0.32,
+    "utilization": 0.55,
+    "status": "LOW",
+    "expected_extra_queue": 0,
+    "details": "Truck turnaround time smooth at 24 minutes."
+  }
+]

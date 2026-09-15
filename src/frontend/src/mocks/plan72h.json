@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "time_window": "Next 6 hours",
+    "action": "Reassign Vessel MSC Palak (V102) from Berth 04 to Berth 03",
+    "reason": "Berth 04 risk 91% with draft saturation; Berth 03 clear with dual crane support",
+    "expected_impact": {
+      "queue_reduction_pct": 31,
+      "wait_time_reduction_pct": 26
+    },
+    "vessel_id": "V102",
+    "target_berth": "Berth-03",
+    "status": "pending"
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "time_window": "Next 12 hours",
+    "action": "Pair Quay Cranes QC-01 & QC-02 to Ever Golden (V204) at Berth 02",
+    "reason": "Reduces unloading window from 11.2h to 8.4h before midnight wave arrives",
+    "expected_impact": {
+      "queue_reduction_pct": 18,
+      "wait_time_reduction_pct": 22
+    },
+    "vessel_id": "V204",
+    "target_berth": "Berth-02",
+    "status": "pending"
+  },
+  {
+    "id": 3,
+    "priority": 3,
+    "time_window": "Next 24 hours",
+    "action": "Divert Feeder CMA CGM Nile (V308) to North Anchorage (Hold 2h)",
+    "reason": "Prevents Yard-B stacking lockup while outbound rail freight clears 450 TEU",
+    "expected_impact": {
+      "queue_reduction_pct": 14,
+      "wait_time_reduction_pct": 15
+    },
+    "vessel_id": "V308",
+    "target_berth": "Anchorage-N",
+    "status": "pending"
+  },
+  {
+    "id": 4,
+    "priority": 4,
+    "time_window": "Next 48 hours",
+    "action": "Schedule preventative thermal cooldown for Crane QC-03 during 03:00 window",
+    "reason": "Avoids critical daytime breakdown during peak Thursday arrival influx",
+    "expected_impact": {
+      "queue_reduction_pct": 12,
+      "wait_time_reduction_pct": 18
+    },
+    "vessel_id": null,
+    "target_berth": "Berth-04",
+    "status": "pending"
+  }
+]

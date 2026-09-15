@@ -1,0 +1,16 @@
+{
+  "port": "PortFlow-Terminal-1",
+  "generated_at": "2026-09-15T10:00:00Z",
+  "congestion_probability": {
+    "next_6h": 0.28,
+    "next_12h": 0.54,
+    "next_24h": 0.79,
+    "next_48h": 0.88,
+    "next_72h": 0.92
+  },
+  "risk_level": "HIGH",
+  "expected_waiting_time_hours": 14.7,
+  "confidence_score": 0.94,
+  "peak_congestion_window": "In +18 to +24 hours",
+  "primary_driver": "Concurrently arriving Post-Panamax vessels exceeding Berth 03 & 04 quay length and gantry crane capacity."
+}

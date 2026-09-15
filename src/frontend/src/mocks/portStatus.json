@@ -1,0 +1,18 @@
+{
+  "timestamp": "2026-09-15T10:00:00Z",
+  "ships_waiting": 7,
+  "ships_waiting_delta": 2,
+  "berth_utilization": 0.85,
+  "berth_utilization_delta": 0.08,
+  "yard_utilization": 0.78,
+  "yard_utilization_delta": 0.04,
+  "crane_load": 0.88,
+  "crane_load_delta": -0.03,
+  "gate_utilization": 0.62,
+  "average_wait_time_h": 11.4,
+  "average_wait_time_delta": 1.8,
+  "active_berths_count": 3,
+  "total_berths_count": 4,
+  "active_cranes_count": 7,
+  "total_cranes_count": 8
+}

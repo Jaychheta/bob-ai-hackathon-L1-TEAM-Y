@@ -9,51 +9,45 @@
 # =============================================================================
 
 team:
-  name: ""                             # REQUIRED — e.g., "Orion Squad"
-  track: ""                            # REQUIRED — one of: AI | DevOps | Sustainability | Open
+  name: "L1 TEAM Y"                    # REQUIRED — e.g., "Orion Squad"
+  track: "AI"                          # REQUIRED — one of: AI | DevOps | Sustainability | Open
   lead:
-    name: ""                           # REQUIRED — e.g., "Alice Chen"
-    email: ""                          # REQUIRED — e.g., "alice.chen@ibm.com"
+    name: "Jay Chheta"                 # REQUIRED — e.g., "Alice Chen"
+    email: "jaychheta947@gmail.com"    # REQUIRED — e.g., "alice.chen@ibm.com"
   members:
-    - name: ""                         # REQUIRED — Team member 1
-      email: ""
-    - name: ""                         # Add more members by copying the two lines above
-      email: ""
-    - name: ""
-      email: ""
+    - name: "Jay Chheta"               # REQUIRED — Team member 1
+      email: "jaychheta947@gmail.com"
+    - name: "Manan Vasani"             # Team member 2
+      email: "mananvasani801@gmail.com"
 
 submission:
-  title: ""                            # REQUIRED — Project display name, e.g., "SmartOps Dashboard"
+  title: "PortFlow AI"                 # REQUIRED — Project display name
 
   problem_statement: >                 # REQUIRED — 1-3 sentences. What problem? Who has it?
-    Replace this text with a concise description of the real-world problem
-    your project addresses and who experiences it.
+    Global maritime container terminals suffer from multi-day quayside vessel congestion, crane allocation bottlenecks, and unpredictable tidal constraints costing over $50,000 per vessel daily in demurrage. Port operations managers lack unified predictive intelligence to foresee bottleneck hotspots across a 72-hour operational horizon.
 
   solution_summary: >                  # REQUIRED — 1-3 sentences. What did you build?
-    Replace this text with a clear description of your solution
-    and how it addresses the problem above.
+    PortFlow AI is an autonomous maritime terminal operations intelligence platform that predicts quayside congestion, identifies bottleneck hotspots, optimizes vessel berth and crane allocation, and synthesizes 72-hour operational recovery playbooks through an interactive IBM Bob RAG-powered Copilot.
 
   key_features:                        # REQUIRED — List 3 to 5 specific features you implemented
-    - ""                               # e.g., "Real-time pipeline anomaly detection using watsonx.ai"
-    - ""
-    - ""
-    - ""                               # optional 4th
-    - ""                               # optional 5th
+    - "Real-time interactive terminal GIS digital twin with live vessel AIS tracking and berth allocation telemetry"
+    - "Multi-horizon predictive congestion forecasting across 6h, 12h, 24h, 48h, and 72h operational horizons"
+    - "Automated bottleneck hotspot diagnostics across berths, gantry cranes, railheads, and terminal gate lanes"
+    - "OR-Tools powered dynamic berth scheduling and crane dispatch optimization with ETA conflict resolution"
+    - "Interactive IBM Bob RAG Copilot synthesizing live terminal telemetry into natural-language recovery playbooks"
 
   tech_stack:
-    languages: []                      # REQUIRED — e.g., ["Python", "TypeScript"]
-    frameworks: []                     # e.g., ["FastAPI", "React"]
-    ibm_technologies: []               # e.g., ["watsonx.ai", "IBM Bob", "IBM Cloud Functions"]
-    databases: []                      # e.g., ["PostgreSQL", "Redis"]
-    other: []                          # e.g., ["Docker", "GitHub Actions", "Slack API"]
+    languages: ["JavaScript", "HTML5", "CSS3", "Python"]
+    frameworks: ["React 18", "Vite", "Tailwind CSS"]
+    ibm_technologies: ["IBM Bob AI", "watsonx.ai", "IBM Cloud"]
+    databases: ["MongoDB Atlas"]
+    other: ["Google OR-Tools", "Lucide React", "Canvas API", "GitHub Actions"]
 
   what_we_are_most_proud_of: >         # Optional but recommended — guides judges to your best work
-    Replace with what aspect of the submission you consider strongest
-    and want judges to pay special attention to.
+    The interactive maritime digital twin and the seamless synergy between multi-horizon congestion prediction, OR-Tools optimization, and the IBM Bob RAG Copilot, enabling operators to simulate disruptions (e.g., gantry crane failures, weather storms) and generate actionable recovery plans in seconds.
 
   known_limitations: >                 # Optional but recommended — be honest about gaps
-    Replace with any known limitations, incomplete features,
-    or shortcuts taken due to time constraints.
+    Terminal vessel queues and AIS coordinates currently use realistic, calibrated port constraint simulation datasets while live hardware AIS transponder ingest streams and direct MongoDB Atlas change-stream triggers are scaffolded for cloud enterprise deployment.
 
 # =============================================================================
 # ARTIFACT LOCATIONS
@@ -67,3 +61,4 @@ artifacts:
   live_demo: "demo/live-demo-url.txt"      # URL to deployed demo (optional)
   screenshots: "demo/screenshots/"
   presentation: "presentation/"
+

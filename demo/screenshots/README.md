@@ -1,26 +1,27 @@
-# Screenshots
+# ⚓ PortFlow AI — Application Screenshots
 
-Place your application screenshots in this folder.
+This directory catalogues the operational modules of PortFlow AI running live on `http://localhost:5173`.
 
-## Naming Convention
+## Module Screenshots Index
 
-Name your screenshots sequentially so they appear in logical order:
+| File | Module / Console | Key Operational Capability Shown |
+|---|---|---|
+| `01-command-center.png` | **Command Center** | Real-time terminal KPIs, 72-hour operational intervention plan, and bottleneck alerts |
+| `02-port-map-digital-twin.png` | **Live Port Map** | Interactive 60-FPS HTML5 Canvas GIS digital twin with vessel AIS telemetry and berth HUD |
+| `03-predictions-risk-matrix.png` | **Predictions Matrix** | Multi-horizon ML risk forecasting comparing 6h, 12h, 24h, 48h, and 72h horizons |
+| `04-or-tools-optimization.png` | **OR-Tools Optimization** | Dynamic berth and crane gang allocations minimizing vessel dwell time and demurrage |
+| `05-route-advisor.png` | **Route Advisor** | Harbor queue management, anchorage vessel guidance, and pilotage slow-steaming |
+| `06-disruption-simulator.png` | **What-If Simulator** | Equipment failure & storm crisis sandbox with real-time delta recovery metrics |
+| `07-ibm-bob-copilot.png` | **IBM Bob Copilot** | Conversational AI copilot grounded in live terminal telemetry for automated playbooks |
 
-  01-landing-page.png       ← First thing a user sees
-  02-main-feature.png       ← Your primary feature in action
-  03-output-or-results.png  ← The result / value delivered
-  04-additional-feature.png ← Any other notable screen
+## Reproduction
 
-## Requirements
+All screens can be explored live by starting the development server:
 
-- Minimum: 3 screenshots
-- Format: PNG or JPG
-- Show the application running with real (or realistic mock) data
-- Avoid screenshots of empty states or placeholder data
-- Captions are not required but appreciated
+```bash
+cd src/frontend
+npm install
+npm run dev
+# Open http://localhost:5173
+```
 
-## Tips
-
-- Use a consistent browser window size across all screenshots
-- Highlight key UI elements with arrows/circles if helpful (use any image editor)
-- Include a screenshot showing IBM technology integration if applicable

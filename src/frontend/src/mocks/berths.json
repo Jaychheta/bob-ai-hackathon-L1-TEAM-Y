@@ -1,0 +1,50 @@
+[
+  {
+    "id": "B1",
+    "name": "Berth 01 (Deepwater Quay)",
+    "length_m": 420.0,
+    "depth_m": 17.5,
+    "max_vessel_teu": 24000,
+    "status": "occupied",
+    "current_vessel": "Maersk Mc-Kinney (V101)",
+    "assigned_cranes": ["QC-01", "QC-02", "QC-03"],
+    "utilization": 0.85,
+    "risk_level": "LOW"
+  },
+  {
+    "id": "B2",
+    "name": "Berth 02 (North Basin)",
+    "length_m": 380.0,
+    "depth_m": 16.0,
+    "max_vessel_teu": 18000,
+    "status": "free",
+    "current_vessel": null,
+    "assigned_cranes": ["QC-04", "QC-05"],
+    "utilization": 0.58,
+    "risk_level": "MEDIUM"
+  },
+  {
+    "id": "B3",
+    "name": "Berth 03 (South Terminal)",
+    "length_m": 350.0,
+    "depth_m": 15.5,
+    "max_vessel_teu": 14000,
+    "status": "free",
+    "current_vessel": null,
+    "assigned_cranes": ["QC-06", "QC-07"],
+    "utilization": 0.42,
+    "risk_level": "LOW"
+  },
+  {
+    "id": "B4",
+    "name": "Berth 04 (Express Pier)",
+    "length_m": 340.0,
+    "depth_m": 14.8,
+    "max_vessel_teu": 12000,
+    "status": "occupied",
+    "current_vessel": "COSCO Glory (V098)",
+    "assigned_cranes": ["QC-08"],
+    "utilization": 0.96,
+    "risk_level": "CRITICAL"
+  }
+]
