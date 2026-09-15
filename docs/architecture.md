@@ -6,23 +6,23 @@ PortFlow AI is structured as a decoupled, reactive event-driven architecture des
 
 ```mermaid
 graph TD
-    subgraph Client Layer
-        A[Harbor Master / Operations Console] -->|HTML5 Canvas + React 18| B[Interactive Port Digital Twin]
-        A -->|Tactical Chat / Prompt| C[IBM Bob Copilot UI]
-        A -->|What-if Sandbox Sliders| D[Disruption Simulator]
+    subgraph ClientLayer ["Client Layer"]
+        A["Harbor Master / Operations Console"] -->|HTML5 Canvas + React 18| B["Interactive Port Digital Twin"]
+        A -->|Tactical Chat / Prompt| C["IBM Bob Copilot UI"]
+        A -->|What-if Sandbox Sliders| D["Disruption Simulator"]
     end
 
-    subgraph Intelligence & Optimization Layer
-        E[FastAPI Telemetry Gateway] -->|Feature Vectors| F[Multi-Horizon ML Forecasters]
-        E -->|Constraint Matrix| G[Google OR-Tools MILP Solver]
-        E -->|Telemetry Context Vectors| H[IBM Bob AI RAG Engine]
-        H -->|Grounded LLM Ingestion| I[IBM watsonx.ai Granite Models]
+    subgraph IntelligenceLayer ["Intelligence & Optimization Layer"]
+        E["FastAPI Telemetry Gateway"] -->|Feature Vectors| F["Multi-Horizon ML Forecasters"]
+        E -->|Constraint Matrix| G["Google OR-Tools MILP Solver"]
+        E -->|Telemetry Context Vectors| H["IBM Bob AI RAG Engine"]
+        H -->|Grounded LLM Ingestion| I["IBM watsonx.ai Granite Models"]
     end
 
-    subgraph Data & Persistence Layer
-        J[(MongoDB Atlas Cloud)] -->|Berth Specs & Historic Moves| E
-        K[AIS Transponder Ingestion Hub] -->|Vessel Vectors & ETAs| E
-        L[Tidal & Weather Feeds] -->|Depth & Surge Constraints| G
+    subgraph DataLayer ["Data & Persistence Layer"]
+        J[("MongoDB Atlas Cloud")] -->|Berth Specs & Historic Moves| E
+        K["AIS Transponder Ingestion Hub"] -->|Vessel Vectors & ETAs| E
+        L["Tidal & Weather Feeds"] -->|Depth & Surge Constraints| G
     end
 
     F -->|6h - 72h Risk Curves| B
@@ -49,18 +49,18 @@ sequenceDiagram
     participant V as Vessel AIS & Quay Telemetry
     participant API as Telemetry Gateway
     participant ML as ML Congestion Forecaster
-    participant OPT as OR-Tools Optimizer
+    participant Solver as OR-Tools Optimizer
     participant BOB as IBM Bob RAG Copilot
     participant UI as Harbor Master Dashboard
 
     V->>API: Stream live vessel positions, ETAs, and crane move rates
     API->>ML: Pass normalized operational state vectors
     ML-->>API: Return 72h congestion probability & hotspot warnings
-    API->>OPT: Trigger schedule rebalancing on ETA conflicts
-    OPT-->>API: Return optimal berth allocations & crane gang assignments
+    API->>Solver: Trigger schedule rebalancing on ETA conflicts
+    Solver-->>API: Return optimal berth allocations & crane gang assignments
     API->>UI: Stream live updates to Canvas map and metric gauges
-    UI->>BOB: Operator asks: "How should we respond to Berth 02 crane failure?"
-    BOB->>API: Fetch current telemetry snapshot & active 72h plan
+    UI->>BOB: Operator requests recovery action for Berth 02 crane failure
+    BOB->>API: Fetch current telemetry snapshot and active 72h plan
     BOB-->>UI: Deliver structured recovery playbook with 1-click action buttons
 ```
 
