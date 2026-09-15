@@ -19,6 +19,10 @@ team:
       email: "jaychheta947@gmail.com"
     - name: "Manan Vasani"             # Team member 2
       email: "mananvasani801@gmail.com"
+    - name: "Yug Bhimani"              # Team member 3
+      email: "yugbhimani@gmail.com"
+    - name: "Manav Italiya"            # Team member 4
+      email: "manavitaliya@gmail.com"
 
 submission:
   title: "PortFlow AI"                 # REQUIRED — Project display name

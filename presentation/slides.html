@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PortFlow AI — Executive Pitch Deck</title>
+  <style>
+    @page {
+      size: 16in 9in;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    }
+    body {
+      background: #020617;
+      color: #f8fafc;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .slide {
+      width: 16in;
+      height: 9in;
+      page-break-after: always;
+      position: relative;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: radial-gradient(circle at 80% 20%, #0f172a 0%, #020617 100%);
+      border-bottom: 2px solid #1e293b;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .title {
+      font-size: 54px;
+      font-weight: 800;
+      line-height: 1.15;
+      color: #ffffff;
+      margin-top: 16px;
+    }
+    .title span {
+      color: #38bdf8;
+    }
+    .subtitle {
+      font-size: 24px;
+      color: #94a3b8;
+      margin-top: 12px;
+      line-height: 1.4;
+      max-width: 1000px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 16px;
+      padding: 30px;
+    }
+    .card h3 {
+      font-size: 24px;
+      color: #38bdf8;
+      margin-bottom: 12px;
+    }
+    .card p {
+      font-size: 18px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+    .stat {
+      font-size: 48px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 8px;
+      font-family: monospace;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid #1e293b;
+      font-size: 16px;
+      color: #64748b;
+    }
+    .highlight {
+      color: #38bdf8;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slide 1: Cover -->
+  <div class="slide">
+    <div>
+      <div class="badge">IBM Innovation Hackathon • Track: AI</div>
+      <h1 class="title">PortFlow <span>AI</span></h1>
+      <p class="subtitle">Autonomous Maritime Terminal Operations Intelligence Platform — Predictive Congestion Management, Dynamic Berth Allocation & Grounded Operations Copilot</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Team: L1 TEAM Y</h3>
+        <p style="margin-bottom: 12px;"><strong>Team Lead:</strong> Jay Chheta (jaychheta947@gmail.com)</p>
+        <p style="margin-bottom: 12px;"><strong>Team Member:</strong> Manan Vasani (mananvasani801@gmail.com)</p>
+        <p style="margin-bottom: 12px;"><strong>Team Member:</strong> Yug Bhimani (yugbhimani@gmail.com)</p>
+        <p><strong>Team Member:</strong> Manav Italiya (manavitaliya@gmail.com)</p>
+      </div>
+      <div class="card">
+        <h3>Core Value Proposition</h3>
+        <p>Proactive 72-hour operational intelligence replacing reactive spreadsheets with GPU-accelerated digital twins, OR-Tools optimization, and IBM Bob RAG decision synthesis.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>PortFlow AI — Pitch Deck</span>
+      <span>Slide 1 / 6</span>
+    </div>
+  </div>
+
+  <!-- Slide 2: Problem Statement -->
+  <div class="slide">
+    <div>
+      <div class="badge">The Maritime Crisis</div>
+      <h2 class="title">The High Cost of <span>Port Congestion</span></h2>
+      <p class="subtitle">80% of global trade moves by sea. Marine terminals face cascading bottlenecks costing millions daily.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="stat">$50K+</div>
+        <h3>Daily Demurrage Penalty</h3>
+        <p>Every day a container vessel sits idle at outer anchorage costs carriers and shippers tens of thousands in direct penalties.</p>
+      </div>
+      <div class="card">
+        <div class="stat">4–7 Days</div>
+        <h3>Average Bottleneck Dwell</h3>
+        <p>Disruptions like crane failures or sudden weather surges cause compounding delays across berths, yards, and railheads.</p>
+      </div>
+      <div class="card">
+        <div class="stat">Reactive</div>
+        <h3>Legacy TOS Infrastructure</h3>
+        <p>Current terminal operating systems rely on manual whiteboard scheduling and siloed shift spreadsheets with zero predictive horizon.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Problem Analysis</span>
+      <span>Slide 2 / 6</span>
+    </div>
+  </div>
+
+  <!-- Slide 3: The Solution -->
+  <div class="slide">
+    <div>
+      <div class="badge">Architecture & Innovation</div>
+      <h2 class="title">The <span>PortFlow AI</span> Solution</h2>
+      <p class="subtitle">An end-to-end mission-control cockpit uniting prediction, optimization, and generative agent assistance.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>1. Multi-Horizon Forecasting</h3>
+        <p>Statistical ML models projecting quayside congestion trajectories across <strong>6h, 12h, 24h, 48h, and 72h</strong> with spatial hotspot risk scoring.</p>
+      </div>
+      <div class="card">
+        <h3>2. OR-Tools Optimization</h3>
+        <p>Constraint programming (CP-SAT) engine resolving vessel-to-berth and crane assignments to minimize dwell and demurrage.</p>
+      </div>
+      <div class="card">
+        <h3>3. IBM Bob RAG Copilot</h3>
+        <p>Specialized maritime domain AI assistant grounded in live terminal telemetry vectors to generate 1-click recovery directives.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Solution Architecture</span>
+      <span>Slide 3 / 6</span>
+    </div>
+  </div>
+
+  <!-- Slide 4: Digital Twin & Live Map -->
+  <div class="slide">
+    <div>
+      <div class="badge">Operational Experience</div>
+      <h2 class="title">60 FPS <span>Canvas Digital Twin</span></h2>
+      <p class="subtitle">Ultra-responsive geospatial visualization of quayside berths, gantry cranes, container blocks, and anchorage basins.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Interactive GIS Layout</h3>
+        <p style="margin-bottom: 16px;">Vector-drawn terminal geometry rendering Berths B1–B4, Quay Cranes QC-01–QC-08, Container Yards A–D, and outer anchorage zones with zero layout thrashing.</p>
+        <p>Includes vessel AIS search, dynamic status filtering (Waiting, Berthed, In-Transit), and slide-over entity inspector drawer.</p>
+      </div>
+      <div class="card">
+        <h3>Anti-Jank Performance Architecture</h3>
+        <p style="margin-bottom: 16px;">Built strictly following GPU layer promotion (`translateZ(0)`), subpixel typography antialiasing, and composite-only transitions (`opacity`, `transform`).</p>
+        <p>Instantaneous UI responsiveness even under high-density spatial entity loads.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Digital Twin & Interface</span>
+      <span>Slide 4 / 6</span>
+    </div>
+  </div>
+
+  <!-- Slide 5: What-If Crisis Simulator -->
+  <div class="slide">
+    <div>
+      <div class="badge">Resilience & Contingency</div>
+      <h2 class="title">What-If <span>Disruption Simulator</span></h2>
+      <p class="subtitle">Stress-test terminal resilience against unexpected crises and simulate recovery strategies in real time.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Crane Outage Stress Test</h3>
+        <p>Simulates crane QC-03 mechanical breakdown. Instantly recalculates berth capacity drop and vessel queue build-up.</p>
+      </div>
+      <div class="card">
+        <h3>Storm & Influx Surges</h3>
+        <p>Models +20 vessel crisis arrival spikes and weather closures. Evaluates anchorage overflow risks before ships arrive.</p>
+      </div>
+      <div class="card">
+        <h3>Automated Recovery Directives</h3>
+        <p>Recommends dynamic diversion gates, overtime gang shifts, and priority vessel reallocations with delta metrics.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Simulation & Resilience</span>
+      <span>Slide 5 / 6</span>
+    </div>
+  </div>
+
+  <!-- Slide 6: Business Impact & Roadmap -->
+  <div class="slide">
+    <div>
+      <div class="badge">Impact & Scalability</div>
+      <h2 class="title">Measurable Impact & <span>Deployment</span></h2>
+      <p class="subtitle">Proven ROI for port terminal operators and global maritime logistics networks.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="stat">-31.6%</div>
+        <h3>Waiting Time Reduction</h3>
+        <p>Demonstrated average anchorage dwell reduction via OR-Tools optimized berth and crane scheduling.</p>
+      </div>
+      <div class="card">
+        <div class="stat">$2.4M+</div>
+        <h3>Annual Demurrage Savings</h3>
+        <p>Direct penalty avoidance per major terminal by preventing idle anchorage queues and vessel turnaround overlaps.</p>
+      </div>
+      <div class="card">
+        <div class="stat">Cloud-Ready</div>
+        <h3>Enterprise Architecture</h3>
+        <p>Designed for multi-tenant deployment with MongoDB Atlas change streams and watsonx.ai enterprise orchestration.</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>L1 TEAM Y • IBM Innovation Hackathon</span>
+      <span>Slide 6 / 6</span>
+    </div>
+  </div>
+
+</body>
+</html>

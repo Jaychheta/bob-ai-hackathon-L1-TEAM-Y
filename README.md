@@ -11,7 +11,7 @@
 | **Team Name** | L1 TEAM Y |
 | **Track** | AI |
 | **Team Lead** | Jay Chheta — jaychheta947@gmail.com |
-| **Members** | Jay Chheta, Manan Vasani |
+| **Members** | Jay Chheta, Manan Vasani, Yug Bhimani, Manav Italiya |
 
 ---
 
